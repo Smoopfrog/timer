@@ -7,16 +7,9 @@ const times = myArgs
     return a - b;
   });
 
-//Test console
-console.log(times);
-
-
 for (const time of times) {
   setTimeout(() => {
     process.stdout.write('\x07');
     process.stdout.write(`.\n`);
   }, time);
 }
-
-
-process.stdout.write('\x07');
