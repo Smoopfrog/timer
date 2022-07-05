@@ -3,10 +3,12 @@ const times = myArgs
   .filter(x => x >= 0)
   .filter(x => !isNaN(x))
   .map(x => x * 1000)
-  .sort((a, b) => {return a - b});
+  .sort((a, b) => {
+    return a - b;
+  });
 
-  //Test console
-  console.log(times)
+//Test console
+console.log(times);
 
 
 for (const time of times) {
