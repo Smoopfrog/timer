@@ -11,8 +11,8 @@ stdin.on('data', data => {
   if (data === 'b') {
     beep();
   }
-  if (data >= 1 && data <= 9 ) {
-    timer = data * 1000;
+  if (data >= 1 && data <= 9) {
+    let timer = data * 1000;
     stdout.write(`Setting timer for ${data} seconds...\n`);
     setTimeout(() => {
       stdout.write(`.\n`);
